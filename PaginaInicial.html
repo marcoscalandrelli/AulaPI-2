@@ -1,12 +1,117 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Aula Projeto Integrador </title>
-</head>
-<body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+<table>
+    <thead>
+      <tr>
+        <th>Month</th>
+        <th>Savings</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>January</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>February</td>
+        <td>$80</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Sum</td>
+        <td>$180</td>
+      </tr>
+    </tfoot>
+  </table>
 
-</body>
-</html>
+
+  <table>
+    <tr>
+      <th>Month</th>
+      <th>Savings</th>
+    </tr>
+    <tr>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$80</td>
+    </tr>
+  </table>
+
+
+  <table>
+    <thead>
+      <tr>
+        <th>Month</th>
+        <th>Savings</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>January</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>February</td>
+        <td>$80</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Sum</td>
+        <td>$180</td>
+      </tr>
+    </tfoot>
+  </table>
+
+
+  <button onclick="showContent()">Show hidden content</button>
+
+<template>
+  <h2>Flower</h2>
+  <img src="img_white_flower.jpg" width="214" height="204">
+</template>
+
+<script>
+function showContent() {
+  var temp = document.getElementsByTagName("template")[0];
+  var clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+</script>
+
+
+<table>
+    <tr>
+      <td>Cell A</td>
+      <td>Cell B</td>
+    </tr>
+    <tr>
+      <td>Cell C</td>
+      <td>Cell D</td>
+    </tr>
+  </table>
+
+
+  <details>
+    <summary>Epcot Center</summary>
+    <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+  </details>
+
+
+  <p>This text contains <sub>subscript</sub> text.</p>
+
+
+  <label for="w3review">Review of W3Schools:</label>
+
+<textarea id="w3review" name="w3review" rows="4" cols="50">
+At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+</textarea>
+
+
+<details>
+    <summary>Epcot Center</summary>
+    <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+  </details>
